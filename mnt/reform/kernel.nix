@@ -46,6 +46,7 @@ let
 
         structuredExtraConfig = with lib.kernel; {
           # configuration options from https://source.mnt.re/reform/reform-debian-packages/-/blob/7f31ba3a6742d60d8d502c1d86e63ef5df3916bf/linux/config
+          DRM_PANEL_JDI_LT070ME05000 = no; # block this module because it might conflict with mnts panel module
           DRM_LVDS_CODEC = module;
           DRM_CDNS_MHDP8546 = module;
           DRM_CDNS_HDMI_CEC = module;
